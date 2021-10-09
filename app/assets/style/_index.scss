@@ -1,0 +1,141 @@
+.banner {
+  background: url(https://raw.githubusercontent.com/hexschool/HTMLHWSource/master/singlePage/banner.png);
+  background-size: cover;
+  height: 300px;
+  display: flex;
+  align-items: center;
+}
+
+.bannerTitle {
+    color:white;
+    width: 100%;
+    padding: 30px 20px;
+    font-weight: bold;
+    font-size: $fz-secondary;
+    background-color:rgba(0, 0, 0, 0.222);
+ }
+
+
+  .cardBox {
+    padding: 15px;
+    & .cardBox_List {
+      display: flex;
+      justify-content: space-around;
+    }
+  }
+
+  .cardBox_list_item {
+        text-align: center;
+        width: 30%;
+        padding: 15px;
+        border-radius: 0 0 5px 5px;
+        border-width: 0 2px 2px 2px;
+        border-style: none solid solid solid;
+        border-color: transparent $border-color $border-color $border-color;
+        box-shadow: 0 10px 10px -10px $box-shadow ;
+        cursor: pointer;
+        transition: 1s;
+        &:hover {
+          box-shadow: 10px 15px 15px 10px $box-shadow;
+        }
+
+        & img {
+          display: inline-block;
+          height: 100px;
+          margin-bottom: 10px;
+        }
+
+        & h4 {
+          font-weight: bold;
+        }
+        & h5, p, ul{
+          text-align: left;
+        }
+
+        & .list {
+          list-style-type:disc;
+          margin-left: 30px;
+          padding-left: 10px;
+        }
+      }
+
+
+
+.tableTitle {
+  text-align: center;
+  font-size: $fz-secondary;
+  font-weight: bold;
+  margin-bottom: 20px;
+  
+}
+.comparisonTable {
+  max-width: 1100px;
+  margin: 0 auto 60px auto;
+  & th {
+    padding: 15px 150px 10px 15px;
+  }
+  & tr {
+    border-bottom: 1px solid whitesmoke;
+    & td {
+      padding-left: 30px;
+    }
+  }
+}
+
+table {
+  margin: 0 auto;
+}
+
+.InfoSection {
+  max-width: 1100px;
+  margin: 0 auto 50px auto;
+  background: linear-gradient(#00644b, #009872);
+  padding: 25px;
+  & .formTitle {
+    color:white;
+    text-align: center;
+    font-size: $fz-secondary;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  & form {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  & textarea {
+    flex:0.5;
+    margin-right: 25px;
+    outline-color:orange;
+  }
+
+  & .FillInfo {
+    flex: 0.5;
+    display: flex;
+    flex-direction: column;
+
+    & label {
+      color: white;
+      font-size: $fz-primary;
+    }
+    & input {
+      padding: 10px;
+      width: 300x;
+      margin-bottom: 15px;
+      outline-color:orange;
+    }
+  }
+}
+
+.btn {
+width: 100px;
+padding: 0 50px;
+align-self:auto;
+}
+
+
+
+
+
+
+
