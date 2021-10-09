@@ -2,10 +2,10 @@
 
 .top {
   position: fixed;
-  right:30px;
-  bottom:50px;
-  height: 45px;
-  width: 45px;
+  right:15px;
+  bottom:45px;
+  height: 40px;
+  width: 40px;
   z-index: 99;
   &:hover {
     color:$hex-green;
@@ -83,6 +83,7 @@
   background-color: rgba(18, 88, 73, 0.781);
   padding-right: 15px;
   border-radius: 20%;
+  z-index: 99;
 }
 
 .navOptions ul {
