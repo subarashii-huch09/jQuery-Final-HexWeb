@@ -1,0 +1,324 @@
+.color-green {
+  color: #06cd9b; }
+
+.bg-grey {
+  background-color: #f9f6f9; }
+
+/* http://meyerweb.com/eric/tools/css/reset/
+v2.0 | 20110126
+License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+*, *::after, *::before {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+
+body {
+  font-family: "Roboto", "Noto Sans TC", "Microsoft JhengHei", serif;
+  line-height: 1.5; }
+  body a {
+    display: block;
+    text-decoration: none; }
+    body a:hover {
+      color: orange;
+      font-style: italic; }
+  body section {
+    margin-bottom: 70px; }
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto; }
+
+header, .main, footer {
+  max-width: 1200px;
+  margin: 0 auto; }
+
+.top {
+  position: fixed;
+  right: 15px;
+  bottom: 45px;
+  height: 40px;
+  width: 40px;
+  z-index: 99; }
+  .top:hover {
+    color: #06cd9b; }
+
+.mediaLink {
+  background-color: #f4f4f4;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end; }
+  .mediaLink li {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    .mediaLink li:first-child:after {
+      content: "|";
+      color: gray;
+      padding: 3px 0;
+      margin: 5px; }
+    .mediaLink li a {
+      margin-left: 4px;
+      color: black; }
+      .mediaLink li a:hover {
+        color: purple; }
+
+.logo {
+  background-image: url(https://raw.githubusercontent.com/hexschool/HTMLHWSource/master/singlePage/logo.png);
+  background-repeat: no-repeat;
+  overflow: hidden;
+  white-space: nowrap;
+  text-indent: 101%;
+  display: block;
+  height: 50px;
+  width: 200px; }
+
+.navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative; }
+  .navbar ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+    .navbar ul li {
+      margin-left: 20px;
+      font-size: 20px;
+      padding: 10px 0; }
+  .navbar a {
+    color: #06cd9b; }
+
+.navOptions li:hover {
+  border-bottom: 2px solid #06cd9b; }
+
+.navOptions a:hover, .navOptions a.active {
+  color: orange; }
+
+.dropDown {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  background-color: rgba(18, 88, 73, 0.781);
+  padding-right: 15px;
+  border-radius: 20%;
+  z-index: 99; }
+
+.navOptions ul {
+  display: none; }
+
+footer {
+  padding: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  footer .logo {
+    width: 170px;
+    height: 36px;
+    background: url(https://raw.githubusercontent.com/hexschool/HTMLHWSource/master/singlePage/footerLogo.png); }
+  footer .footerContact {
+    margin-left: 4px; }
+    footer .footerContact a {
+      display: inline;
+      color: red; }
+
+.swiper {
+  max-height: 480px;
+  max-width: 1200px; }
+
+.banner {
+  position: relative; }
+
+.bannerTitle {
+  color: white;
+  width: 100%;
+  padding: 30px 20px;
+  font-weight: bold;
+  font-size: 32px;
+  background-color: rgba(161, 105, 105, 0.222);
+  position: absolute;
+  z-index: 2;
+  -webkit-transform: translate(0, -250%);
+      -ms-transform: translate(0, -250%);
+          transform: translate(0, -250%); }
+
+.cardBox {
+  padding: 15px; }
+  .cardBox .cardBox_List {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around; }
+
+.cardBox_list_item {
+  text-align: center;
+  width: 30%;
+  padding: 15px;
+  border-radius: 0 0 5px 5px;
+  border-width: 0 2px 2px 2px;
+  border-style: none solid solid solid;
+  border-color: transparent #f5f6fa #f5f6fa #f5f6fa;
+  -webkit-box-shadow: 0 10px 10px -10px #718093;
+          box-shadow: 0 10px 10px -10px #718093;
+  cursor: pointer;
+  -webkit-transition: 1s;
+  -o-transition: 1s;
+  transition: 1s; }
+  .cardBox_list_item:hover {
+    -webkit-box-shadow: 10px 15px 15px 10px #718093;
+            box-shadow: 10px 15px 15px 10px #718093; }
+  .cardBox_list_item img {
+    display: inline-block;
+    height: 100px;
+    margin-bottom: 10px; }
+  .cardBox_list_item h4 {
+    font-weight: bold; }
+  .cardBox_list_item h5, .cardBox_list_item p, .cardBox_list_item ul {
+    text-align: left; }
+  .cardBox_list_item .list {
+    list-style-type: disc;
+    margin-left: 30px;
+    padding-left: 10px; }
+
+.tableTitle {
+  text-align: center;
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 20px; }
+
+.comparisonTable {
+  max-width: 1100px;
+  margin: 0 auto 60px auto; }
+  .comparisonTable th {
+    padding: 15px 150px 10px 15px; }
+  .comparisonTable tr {
+    border-bottom: 1px solid whitesmoke; }
+    .comparisonTable tr td {
+      padding-left: 30px; }
+
+table {
+  margin: 0 auto; }
+
+.InfoSection {
+  max-width: 1100px;
+  margin: 0 auto 50px auto;
+  background: -webkit-gradient(linear, left top, left bottom, from(#00644b), to(#009872));
+  background: -o-linear-gradient(#00644b, #009872);
+  background: linear-gradient(#00644b, #009872);
+  padding: 25px; }
+  .InfoSection .formTitle {
+    color: white;
+    text-align: center;
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 20px; }
+  .InfoSection form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly; }
+  .InfoSection textarea {
+    -webkit-box-flex: 0.5;
+        -ms-flex: 0.5;
+            flex: 0.5;
+    margin-right: 25px;
+    outline-color: orange; }
+  .InfoSection .FillInfo {
+    -webkit-box-flex: 0.5;
+        -ms-flex: 0.5;
+            flex: 0.5;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+    .InfoSection .FillInfo label {
+      color: white;
+      font-size: 20px; }
+    .InfoSection .FillInfo input {
+      padding: 10px;
+      width: 300x;
+      margin-bottom: 15px;
+      outline-color: orange; }
+
+.btn {
+  width: 100px;
+  padding: 0 50px;
+  -ms-flex-item-align: auto;
+      align-self: auto; }
+
+/*# sourceMappingURL=all.css.map */
