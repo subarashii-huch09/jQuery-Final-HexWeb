@@ -2,10 +2,12 @@
 
 $(document).ready(function (e) {
   // drop-down menu 下拉式選單功能
-  $(".trigger").click(function (e) {
+  $("li .trigger").click(function (e) {
     e.preventDefault();
-    $(".trigger").toggleClass("active");
-    $(".dropDown").slideToggle(500);
+    $(this).toggleClass("active");
+    $(this).parent().siblings().find(".trigger").removeClass("active");
+    $(this).siblings(".dropDown").slideToggle(500);
+    $(this).parent().siblings().find(".dropDown").slideUp(500);
   }); // scroll to top 效果
 
   $(".top").click(function (e) {
